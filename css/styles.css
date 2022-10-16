@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    /*align-items: center;*/
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    position: fixed;
+    z-index: 3;
+}
+.header_izq{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2em;
+}
+
+.header_izq img{
+    width: 10em;
+}
+
+.header_der{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+.header_der ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style:none;
+    
+
+}
+
+.header_der ul li{
+    padding: 5px 10px;
+}   
+
+.header_der ul li a{
+    
+    color: rgb(216, 215, 215);
+} 
+
+.contenido_principal{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.7),rgb(0 0 0 /.7)), url("../img/palacio_aguas.jpg");
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    position: relative;
+
+}
+
+.texto_principal{
+    color: #ffffff;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top:40vh;
+    width: 40%;
+    right: 2em;
+}
+
+.texto_principal h2{
+    font-size: 2.5em;
+}
+
+.texto_principal p{
+    font-size: 1.5em;
+}
+
+.botones{
+    margin: 30px 0px;
+}
+
+.btn-o, .btn-t{
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-o{
+
+    border: 1px solid #cccccc;
+}
+.btn-t{
+    background-color: #27A647;
+}
+
+.al100{
+    width: 100%;
+}
+
+.btn{
+    padding: 5px 10px;
+}
+
+/*oradores*/
+.previa_caja_oradores h3{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 50px 0px;
+    }
+
+.caja_oradores{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    
+}
+
+.orador{
+    
+    width: 350px;
+    margin:0px 10px;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc; 
+}
+
+.txt_orador{
+    padding: 10px;
+   
+}
+
+.orador img{
+width: 100%;
+}
+
+.txt_orador h4{
+    padding: 10px 0px;
+    font-size: 1.5em;
+   
+}
+
+.tags span{
+    font-size: 0.8em;
+    padding: 2px 4px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+}
+
+span.tjs{
+    background-color: #F3C124;
+}
+span.react{
+    background-color: #239BB1;
+    color: #ffffff;
+}
+span.neg{
+    background-color: #6E777E;
+    color: #ffffff;
+}
+span.stp{
+    background-color: #CD3C47;
+    color: #ffffff;
+}
+/*agenda*/
+
+.agenda{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    margin: 20px 0px;
+}
+
+.ag-imagen{
+    width: 50%;
+
+}
+
+.ag-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.ag-txt{
+    align-items: center;
+    width: 50%;
+    background-color: #212222;
+    position: relative;
+    
+}
+
+.cont-ag-txt{
+    width: 80%;
+    padding-left: 50px;
+    top:15%;
+    position: absolute;
+}
+
+.cont-ag-txt h3{
+    font-size: 2em;
+    color: #ffffff;
+    padding: 5px 0px;
+}
+
+.cont-ag-txt p{
+    color: #cccccc;
+    padding: 5px 0px;
+    margin:0;
+}
+
+/*conviértete en un orador*/
+
+.caja-form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-form h3{
+    text-align: center;
+}
+
+ .caja-nya{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 10px 20px;
+    margin:10px;
+}
+
+.nya{
+width: 100%;
+text-align: center;
+}
+
+.anchottl{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+textarea{
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.enviar{
+width: 70%;
+background-color: green;
+color: #ffffff;
+border:none;
+}
+
+.clean{
+    width: 20%;
+    background-color: #212222;
+    color: #c2c5c7;
+    border:none;
+}
+
+/*footer*/
+
+footer{
+    background-color: #1D4E6C;
+    margin:50px 20px;
+    padding: 50px 0px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style:none;
+    
+
+}
+
+footer ul li{
+    padding: 5px 10px;
+}   
+
+footer ul li a{
+    
+    color: rgb(216, 215, 215);
+} 
+
+/*medias query*/
+
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+
+    .texto_principal{
+        width: 50%;   
+    }
+    .texto_principal h2 {
+        font-size: 1.8em;
+    }
+    .texto_principal p {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /*header{
+        display: inline-block;
+    }
+    
+    .header_izq{
+        display: inline-block;
+    }*/
+
+    .contenido_principal{
+        top: 15vh;
+
+    }
+    
+    .header_der, .header_der ul, .header_izq, header{
+        display: inline-block;
+    }
+
+
+    .caja_oradores{
+        flex-direction: column;   
+        width: 90%; 
+    }
+    .orador{
+        width: 85%;
+        margin:20px 0px;
+    }
+    .ag-imagen{
+        width: 100%;
+    
+    }
+        
+    .ag-txt{
+        width: 100%;
+        
+    }
+
+    .agenda{
+        flex-direction: column;
+    }
+
+    .cont-ag-txt{
+        width: 100%;
+        position: inherit;
+        background-color: #212222;
+        margin: 0 auto;
+        height: 50vh;
+        top:20px;
+    }
+
+    .texto_principal{
+        width: 100%;
+        padding: 0px 50px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        right: 1px;
+    }
+
+    
+.texto_principal h2 {
+    font-size: 1.8em;
+}
+
+.texto_principal p{
+    font-size: 1em;
+}
+
+footer{
+    
+    margin:0px;
+}
+
+footer ul{
+flex-direction: column;
+text-align: center;
+
+}
+
+form h3{
+    margin-top:30px;
+}
+
+.caja-form{
+    display: inline-block;
+}
+
+.enviar{
+    width: 60%;
+    }
+
+
+}/*fin 768 query*/
