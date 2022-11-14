@@ -14,7 +14,7 @@ let categoria = document.getElementById('categoria');
 
 
 function borrar(){
-    verPago.innerHTML = "";
+    verPago.innerHTML = "Resumen de compra.";
     descuento.innerHTML = "";
 }
 
