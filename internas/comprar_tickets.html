@@ -1,14 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar tickets</title>
+   <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../css/styles.css">
+    
 </head>
-<body>
-    <section>
-        <h1>Comprar tickets</h1>
-    </section>        
-</body>
+
+    <body>
+        <header>
+            <div class="header_izq">
+                <img src="../img/logo.png" alt="">
+                <h1>Conferencia Buenos Aires</h1>
+            </div>
+            <div class="header_der">
+                <ul>
+                    <li><a href="../index.html#la-conferencia">La conferencia</a></li>
+                    <li><a href="../index.html#los-oradores">Los oradores</a></li>
+                    <li><a href="../index.html#lugar-fecha">El lugar y la fecha</a></li>
+                    <li><a href="../index.html#convertite-en-orador">Convertite en orador</a></li>
+                    <li class="select"><a  href="#">Comprar tickets</a></li>
+                </ul>
+
+            </div>
+        </header>
+        
+        <main>
+            <div class="previa_caja_categorias">
+                <div class="caja_categorias">
+                    <div class="categoria Est">
+                        <h2 class="tipoCatE">Estudiante</h2>
+                        <div class="caja-txt-categoria">
+                            <p class="txt-descuento">Tienen un descuento</p>
+                            <p class="porcentaje">80%</p>
+                            <p class="aclaracion">* Presentar documentación</p>
+                        </div>
+                    </div>
+                    <div class="categoria Tra">
+                        <h2 class="tipoCatT">Trainee</h2>
+                        <div class="caja-txt-categoria">
+                            <p class="txt-descuento">Tienen un descuento</p>
+                            <p class="porcentaje">50%</p>
+                            <p class="aclaracion">* Presentar documentación</p>
+                        </div>    
+                    </div>
+                    <div class="categoria Jun">
+                        <h2 class="tipoCatJ">Junior</h2>
+                        <div class="caja-txt-categoria">
+                            <p class="txt-descuento">Tienen un descuento</p>
+                            <p class="porcentaje">15%</p>
+                            <p class="aclaracion">* Presentar documentación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="caja-form" id="form_comprar_tickets">
+                <form action="">
+                    <h3>Valor de ticket $200</h3>
+                    <div class="caja-nya">
+                        <input id="nombre" class="nya" type="text" placeholder="Nombre">
+                        <input id="apellido" class="nya" type="text" placeholder="Apellido">     
+                    </div>    
+                    <div class="anchottl">
+                        <input id="email" class="email" type="email" placeholder="email@mail.com">
+                    </div> 
+                    <div class="caja-nya">
+                        <input id="cantidad" class="nya" type="number" min="1"  placeholder="Cantidad">
+                        <select class="nya" id="categoria">
+                            <option selected value="">Seleccionar una categoría</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Público general">Público general</option>
+                        </select>
+                    </div>
+                    <div  class="caja-nya resumenTxt">
+                            <div> <span id="verPago">Resumen de compra. </span> </div>
+                    </div>
+                    <div>
+                        <button type="reset" class="borrar"  id="botonBorrar" onclick="borrar()">Borrar</button>
+                        <button type="button" id="btnTotalPago" onclick="totalPago()"  class="resumen" >Resumen</button>
+                        
+                     </div>   
+                </form>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Contactanos</a></li>
+                <li><a href="">Prensa</a></li>
+                <li><a href="">Conferencias</a></li>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Privacidad</a></li>
+                <li><a href="">Estudiantes</a></li>
+            </ul>
+        </footer>
+        <script src="../js/mijs.js"></script>
+        <!--<script src="../js/bootstrap.bundle.min.js"></script>-->
+    </body>
+
 </html>

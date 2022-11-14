@@ -7,6 +7,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
+
+/*menu selected*/
+
+.select{
+
+    background-color: green;
+    border-radius: 6px;
+    
+}
+
+.select a{
+
+    color: #ffffff!important;
+}
+
+/*fin menu selected*/
+
 a{
     text-decoration: none;
 }
@@ -116,14 +133,19 @@ header{
     padding: 5px 10px;
 }
 
-/*oradores*/
+/*oradores y categorias*/
 .previa_caja_oradores h3{
     font-size: 2.5em;
     text-align: center;
     padding: 50px 0px;
     }
 
-.caja_oradores{
+.previa_caja_categorias{
+
+    padding-top:200px;
+}    
+
+.caja_oradores, .caja_categorias{
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -141,6 +163,7 @@ header{
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc; 
 }
+
 
 .txt_orador{
     padding: 10px;
@@ -178,6 +201,56 @@ span.neg{
 span.stp{
     background-color: #CD3C47;
     color: #ffffff;
+}
+
+.categoria{
+    /*padding: 10px;*/
+    margin:0px 20px;
+}
+
+.categoria h2{
+    font-size: 2em;
+    color:#ffffff;
+}
+
+.tipoCatE, .tipoCatT, .tipoCatJ, .txt-descuento, .porcentaje, .aclaracion{
+    text-align: center;
+    padding: 5px 50px;
+
+}
+
+.caja-txt-categoria{
+    padding: 20px 10px;
+}
+
+.categoria.Est{
+    border:1px solid #036CFF;
+}
+
+.categoria.Tra{
+    border:1px solid #00B7F6;
+}
+
+.categoria.Jun{
+    border:1px solid #FFBA00;
+}
+
+.tipoCatE{
+    background-color: #036CFF;
+}
+
+.tipoCatT{
+    background-color: #00B7F6;
+}
+
+.tipoCatJ{
+    background-color: #FFBA00;
+}
+
+.porcentaje{
+    font-size: 2em;
+    font-weight: bold;
+    color:#1E2830;
 }
 /*agenda*/
 
@@ -248,12 +321,12 @@ span.stp{
     align-items: center;
 }
 
-input{
+input, select, button{
     padding: 10px 20px;
     margin:10px;
 }
 
-.nya{
+.nya, .resumen{
 width: 100%;
 text-align: center;
 }
@@ -286,6 +359,39 @@ border:none;
     color: #c2c5c7;
     border:none;
 }
+
+/*Form comprar tickets*/
+
+#form_comprar_tickets{
+    margin-top: 50px;
+    
+}
+
+#form_comprar_tickets form h3{
+    font-size: 3em;
+    padding: 20px 0px;
+}
+
+.borrar, .resumen{
+    width: 45%;
+    background-color: #8FBA39;
+    color: #ffffff;
+    border:none;
+}
+
+#categorias-compra{
+    padding: 10px 0px;
+}
+
+.resumenTxt{
+    margin:0px 10px;
+    background-color: #0c57be;
+    color:#ffffff;
+    padding: 20px 10px;
+    
+}
+
+/*fin comprar tickets*/
 
 /*footer*/
 
@@ -421,4 +527,39 @@ form h3{
     }
 
 
+.caja_categorias{
+    flex-direction: column;   
+    width: 100%; 
+}
+
+.categoria{
+
+    margin:20px 0px;
+}
+
+.previa_caja_categorias{
+
+    padding-top:340px;
+}  
+
+
+.borrar, .resumen{
+    width: 43%; /*form comprar tickets*/
+    background-color: #8FBA39;
+    color: #ffffff;
+    border:none;
+}
+
 }/*fin 768 query*/
+
+.error{
+    background-color: rgba(236, 13, 13, 0.5);
+    border:1px solid red;
+}
+
+#verPago{
+font-size: 1.5em;
+}
+#descuento{
+    font-size: 0.5em!important;
+}
